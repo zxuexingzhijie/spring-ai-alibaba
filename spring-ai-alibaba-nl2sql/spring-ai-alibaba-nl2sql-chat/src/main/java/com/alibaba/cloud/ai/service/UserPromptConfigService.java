@@ -243,7 +243,7 @@ public class UserPromptConfigService {
 
 	/**
 	 * Disable all configurations of specified type
-	 * @param promptType prompt type
+	 * @param config prompt type
 	 */
 	private void updatePromptTypeMapping(UserPromptConfig config) {
 		if (Boolean.TRUE.equals(config.getEnabled())) {
@@ -261,7 +261,7 @@ public class UserPromptConfigService {
 
 	/**
 	 * Get custom prompt content, returns null if no custom configuration
-	 * @param promptType prompt type
+	 * @param config prompt type
 	 * @return custom prompt content
 	 */
 	private void removeFromPromptTypeMapping(UserPromptConfig config) {
